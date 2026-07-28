@@ -1,123 +1,13 @@
-import Image from "next/image";
-
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import FeaturedMenu from "./components/FeaturedMenu";
 export default function Home() {
   return (
     <main className="min-h-screen bg-pink-50">
-      {/* Navigation */}
-      <nav className="flex items-center justify-between px-8 py-6 bg-pink-600 text-white">
-        <h1 className="text-3xl font-bold">🌸 Pink Spoon</h1>
-
-        <ul className="hidden md:flex gap-8 font-medium">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">About</a></li>
-  <li><a href="#">Menu</a></li>
-  <li><a href="#">Contact</a></li>
-</ul>
-
-<button className="md:hidden text-3xl">
-  ☰
-</button>
-      </nav>
-
-      {/* Hero Section */}
-      <section className="relative h-[600px]">
-        <Image
-          src="/images/hero.jpg"
-          alt="Restaurant"
-          fill
-          className="object-cover"
-          priority
-        />
-
-        <div className="absolute inset-0 bg-pink-900/50 flex flex-col items-center justify-center text-center px-6">
-          <h2 className="text-6xl font-bold text-white">
-            Delicious Meals Made With Love
-          </h2>
-
-          <p className="mt-6 text-xl text-pink-100 max-w-2xl">
-            Fresh ingredients, unforgettable flavours, and a warm atmosphere.
-            Welcome to Pink Spoon Restaurant.
-          </p>
-
-          <button className="mt-8 bg-pink-500 hover:bg-pink-700 hover:scale-105 transition-all duration-300 text-white px-8 py-4 rounded-full text-lg font-semibold">
-  View Menu
-</button>
-        </div>
-      </section>
-      {/* Featured Menu */}
-<section className="py-20 px-8 bg-white">
-  <h2 className="text-4xl font-bold text-center text-pink-600 mb-12">
-    Our Popular Dishes
-  </h2>
-
-  <div className="grid md:grid-cols-3 gap-8">
-    <div className="bg-pink-50 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-  <Image
-    src="/images/chicken.jpg"
-    alt="Grilled Chicken"
-    width={500}
-    height={300}
-    className="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
-  />
-
-  <div className="p-6 text-center">
-    <h3 className="text-2xl font-bold text-pink-700">
-      Grilled Chicken
-    </h3>
-
-    <p className="mt-3 text-gray-600">
-      Juicy grilled chicken served with fresh vegetables.
-    </p>
-
-    <p className="mt-4 text-pink-600 font-bold">$15</p>
-  </div>
-</div>
-
-    <div className="bg-pink-50 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-  <Image
-    src="/images/pasta.jpg"
-    alt="Creamy Pasta"
-    width={500}
-    height={300}
-    className="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
-  />
-
-  <div className="p-6 text-center">
-    <h3 className="text-2xl font-bold text-pink-700">
-      Creamy Pasta
-    </h3>
-
-    <p className="mt-3 text-gray-600">
-      Rich, creamy pasta topped with parmesan cheese.
-    </p>
-
-    <p className="mt-4 text-pink-600 font-bold">$12</p>
-  </div>
-</div>
-
-    <div className="bg-pink-50 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-  <Image
-    src="/images/cake.jpg"
-    alt="Chocolate Cake"
-    width={500}
-    height={300}
-    className="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
-  />
-
-  <div className="p-6 text-center">
-    <h3 className="text-2xl font-bold text-pink-700">
-      Chocolate Cake
-    </h3>
-
-    <p className="mt-3 text-gray-600">
-      Soft chocolate cake with a delicious strawberry topping.
-    </p>
-
-    <p className="mt-4 text-pink-600 font-bold">$8</p>
-  </div>
-  </div>
-  </div>
-</section>
+  <Navbar />
+<Hero />
+      
+      <FeaturedMenu />
 {/* About Section */}
 <section className="bg-pink-100 py-20 px-8">
   <div className="max-w-5xl mx-auto text-center">
