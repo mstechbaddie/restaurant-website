@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FeaturedMenu() {
   return (
-    <section className="py-20 px-8 bg-white">
+    <section id="menu" className="py-20 px-8 bg-white">
       <h2 className="text-4xl font-bold text-center text-pink-600 mb-12">
         Our Popular Dishes
       </h2>
@@ -10,13 +10,13 @@ export default function FeaturedMenu() {
       <div className="grid md:grid-cols-3 gap-8">
 
         {/* Chicken */}
-        <div className="bg-pink-50 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+        <div className="bg-pink-50 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-3 transition-all duration-300">
           <Image
             src="/images/chicken.jpg"
             alt="Grilled Chicken"
             width={500}
             height={300}
-            className="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+            className="w-full h-56 object-cover hover:scale-110 transition-transform duration-300"
           />
 
           <div className="p-6 text-center">
@@ -33,13 +33,13 @@ export default function FeaturedMenu() {
         </div>
 
         {/* Pasta */}
-        <div className="bg-pink-50 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+        <div className="bg-pink-50 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-3 transition-all duration-300">
           <Image
             src="/images/pasta.jpg"
             alt="Creamy Pasta"
             width={500}
             height={300}
-            className="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+            className="w-full h-56 object-cover hover:scale-110 transition-transform duration-300"
           />
 
           <div className="p-6 text-center">
@@ -56,13 +56,13 @@ export default function FeaturedMenu() {
         </div>
 
         {/* Cake */}
-        <div className="bg-pink-50 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+        <div className="bg-pink-50 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-3 transition-all duration-300">
           <Image
             src="/images/cake.jpg"
             alt="Chocolate Cake"
             width={500}
             height={300}
-            className="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+            className="w-full h-56 object-cover hover:scale-110 transition-transform duration-300"
           />
 
           <div className="p-6 text-center">

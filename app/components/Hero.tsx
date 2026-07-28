@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative h-[600px]">
+    <section id="home" className="relative h-[600px] pt-24">
       <Image
         src="/images/hero.jpg"
         alt="Restaurant"
@@ -21,9 +21,12 @@ export default function Hero() {
           Welcome to Pink Spoon Restaurant.
         </p>
 
-        <button className="mt-8 bg-pink-500 hover:bg-pink-700 hover:scale-105 transition-all duration-300 text-white px-8 py-4 rounded-full text-lg font-semibold">
-          View Menu
-        </button>
+        <a
+  href="#menu"
+  className="mt-8 inline-block bg-pink-500 hover:bg-pink-700 hover:scale-105 transition-all duration-300 text-white px-8 py-4 rounded-full text-lg font-semibold"
+>
+  View Menu
+</a>
       </div>
     </section>
   );
