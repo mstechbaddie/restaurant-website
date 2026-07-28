@@ -6,12 +6,12 @@ export default function ChefSpecial() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
         <Image
-          src="/images/chicken.jpg"
-          alt="Chef Special"
-          width={600}
-          height={500}
-          className="rounded-2xl shadow-2xl object-cover hover:scale-105 transition-all duration-300"
-        />
+  src="/images/chicken.jpg"
+  alt="Chef Special"
+  width={600}
+  height={500}
+  className="rounded-2xl shadow-2xl object-cover hover:scale-105 transition-all duration-300 w-full h-[450px]"
+/>
 
         <div>
           <p className="text-pink-600 font-semibold uppercase">
