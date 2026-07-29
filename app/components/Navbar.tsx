@@ -3,16 +3,48 @@ import { useState } from "react";
 export default function Navbar() {
    const [isOpen, setIsOpen] = useState(false); 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-8 py-6 bg-pink-600 text-white shadow-lg">
-      <h1 className="text-3xl font-bold">🌸 Pink Spoon</h1>
+    <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-8 py-4 bg-pink-600/90 backdrop-blur-md text-white shadow-lg transition-all duration-300">
+      <a href="#home">
+  <h1 className="text-3xl font-bold cursor-pointer hover:scale-105 transition-transform duration-300">
+    🌸 Pink Spoon
+  </h1>
+</a>
 
       <div className="hidden md:flex items-center gap-8">
 
   <ul className="flex gap-8 font-medium">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#menu">Menu</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li>
+  <a
+    href="#home"
+    className="hover:text-pink-200 transition-colors duration-300"
+  >
+    Home
+  </a>
+</li>
+    <li>
+  <a
+    href="#about"
+    className="hover:text-pink-200 transition-colors duration-300"
+  >
+    About
+  </a>
+</li>
+ <li>
+  <a
+    href="#menu"
+    className="hover:text-pink-200 transition-colors duration-300"
+  >
+    Menu
+  </a>
+</li>
+    <li>
+  <a
+    href="#contact"
+    className="hover:text-pink-200 transition-colors duration-300"
+  >
+    Contact
+  </a>
+</li>
   </ul>
 
   <a

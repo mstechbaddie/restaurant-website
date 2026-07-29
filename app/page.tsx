@@ -2,6 +2,8 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import FeaturedMenu from "./components/FeaturedMenu";
 import ChefSpecial from "./components/ChefSpecial";
+import FoodGallery from "./components/FoodGallery";
+import OpeningHours from "./components/OpeningHours";
 import About from "./components/About";
 import Testimonials from "./components/Testimonials";
 import Reservation from "./components/Reservation";
@@ -15,6 +17,8 @@ export default function Home() {
       
       <FeaturedMenu />
       <ChefSpecial />
+      <FoodGallery />
+      <OpeningHours />
       <About />
 <Testimonials />
 <Reservation />
